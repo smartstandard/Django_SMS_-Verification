@@ -1,0 +1,5 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.phone_number.label }} {{ form.phone_number }}
+    <button type="submit">Send Code</button>
+</form>

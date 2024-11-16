@@ -1,0 +1,5 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.code.label }} {{ form.code }}
+    <button type="submit">Verify Code</button>
+</form>
